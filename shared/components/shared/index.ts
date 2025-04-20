@@ -1,3 +1,11 @@
 export { Container } from './container';
 export { Header } from './header';
 export { Title } from './title';
+export { ErrorText } from './error-text';
+export { RequiredSymbol } from './required-symbol';
+export { ClearButton } from './clear-button';
+export { ProfileButton } from './profile-button';
+export { ProfileForm } from './profile-form';
+export { InfoBlock } from './info-block';
+export { StoryCard } from './story-card';
+export * from './form';

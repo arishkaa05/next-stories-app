@@ -5,7 +5,7 @@ module.exports = {
   printWidth: 80,
   tabWidth: 2,
   useTabs: false,
-  vueIndentScriptAndStyle: true,
-  importOrder: ['^vue', '^[a-z]', '^[./]'],
+  vueIndentScriptAndStyle: false,
+  importOrder: ['^next', '^react', '^@?\\w', '^[./]'],
   importOrderSeparation: true,
 };

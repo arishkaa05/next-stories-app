@@ -1,6 +1,6 @@
 import { Header } from '@/shared/components/shared';
 import type { Metadata } from 'next';
-import { Suspense } from 'react';
+import { ReactNode, Suspense } from 'react';
 
 export const metadata: Metadata = {
   title: 'Главная',
@@ -8,8 +8,10 @@ export const metadata: Metadata = {
 
 export default function HomeLayout({
   children,
+  modal,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
+  modal: ReactNode;
 }>) {
   return (
     <main className="min-h-screen">
@@ -17,6 +19,7 @@ export default function HomeLayout({
         <Header />
       </Suspense>
       {children}
+      {modal}
     </main>
   );
 }
